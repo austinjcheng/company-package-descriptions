@@ -5,15 +5,43 @@
     <style>
       * {
         box-sizing: border-box;
+        font-family: Arial;
+      }
+      
+      .column-container {
+        display: table; /* Make the container element behave like a table */
+        width: 100%; /* Set full-width to expand the whole page */
+      }
+      h1 {
+        color: white;
+      }
+      h2 {
+        text-align: center;
+        color: floralwhite;
+      }
+      p {
+        color: white;
+        padding-bottom: 5px;
+        padding-left: 10px;
+      }
+      .greyed-out {
+        color: darkgrey;
       }
 
       .column {
+        width: 20%;
+        display: table-cell;
         border:5px solid #5c33ff;
         border-radius:20px;
-        float: left;
-        width: 25%;
         padding: 10px;
-        /*height: 300px; */
+        /*background-color:#e3d9ff;*/
+        background-image:linear-gradient(180deg, RGB(91, 3, 255), RGB(192, 158, 255));
+      }
+      @media only screen and (max-width: 600px) {
+        .column { 
+          display: block;
+          width: 100%;
+        }
       }
 
       /* Clear floats after the columns */
@@ -26,66 +54,108 @@
   </head>
 <body>
 
-<h2>Our Packages</h2>
+<h2 style="color:black">Our Packages</h2>
+  
+<div class="free-package">
+  
+</div>
 
-<div class="row">
-  <div class="column" style="background-color:#e3d9ff;">
-    <h2>Enhanced Deliverables</h2>
-    <p>❌ Competitive Analysis </p>
-    <p>❌ Persona Profile </p>
+<div class="column-container">
+  <div class="column">
+    <h2>Free Sample</h2>
+    <p style="text-align:center">Free package</p>
+    <br>
+    <h2 style="text-align:center">1 Deliverable</h1>
+    
+    <p>✅ Persona Profile </p>
+
+  </div>
+  <div class="column">
+    <h2>Enhanced Package</h2>
+    <p style="text-align:center">All-in-one package</p>
+    <br>
+    <h2 style="text-align:center">13 Deliverables</h1>
+    <p style="font-weight:bold; text-decoration:underline">Category</p>
+    
     <p>✅ Wireframes </p>
     <p>✅ Moodboard (Color Psychology Analysis)</p>
     <p>✅ Interactive Prototypes </p>
-    <p>❌ Flowchart & Activity Diagram </p>
     <p>✅ Site Map</p>
+    <p style="font-weight:bold; text-decoration:underline">Category</p>
     <p>✅ User Journey Map</p>
     <p>✅ Proofreading </p>
-    <p>❌ UX Writing </p>
     <p>✅ Software Development </p>
-    <p>❌ Usability Report </p>
-    <p>❌ Marketing Strategy </p>
-  </div>
-  <div class="column" style="background-color:#e3d9ff;">
-    <h2>Express Deliverables</h2>
+    <p style="font-weight:bold; text-decoration:underline">Category</p>
     <p>✅ Competitive Analysis </p>
     <p>✅ Persona Profile </p>
-    <p>✅ Wireframes </p>
-    <p>✅ Moodboard (Color Psychology Analysis)
-     </p>
-    <p>✅ Interactive Prototypes </p>
     <p>✅ Flowchart & Activity Diagram </p>
-    <p>✅ Site Map
-     </p>
-    <p>✅ User Journey Map
-     </p>
-    <p>✅ Proofreading </p>
     <p>✅ UX Writing </p>
-    <p>✅ Software Development </p>
     <p>✅ Usability Report </p>
     <p>✅ Marketing Strategy </p>
   </div>
-  <div class="column" style="background-color:#e3d9ff;">
+  <div class="column">
+    <h2>Express Package</h2>
+    <p style="text-align:center">Frontend and Backend services for applications that require less extensive development</p>
+    <h2 style="text-align:center">7 Deliverables</h1>
+    <br>
+    
+    <p style="font-weight:bold; text-decoration:underline">Category</p>
+    <p>✅ Wireframes </p>
+    <p>✅ Moodboard (Color Psychology Analysis)</p>
+    <p>✅ Interactive Prototypes </p>
+    <p>✅ Site Map</p>
+    <p style="font-weight:bold; text-decoration:underline">Category</p>
+    <p>✅ User Journey Map</p>
+    <p>✅ Proofreading </p>
+    <p>✅ Software Development </p>
+    <p class="greyed-out">❌ Competitive Analysis </p>
+    <p class="greyed-out">❌ Persona Profile </p>
+    <p class="greyed-out">❌ Flowchart & Activity Diagram </p>
+    <p class="greyed-out">❌ UX Writing </p>
+    <p class="greyed-out">❌ Usability Report </p>
+    <p class="greyed-out">❌ Marketing Strategy </p>
+  </div>
+  <div class="column">
     <h2>Frontend Only</h2>
+    <p style="text-align:center">Frontend only services including: Marketing, UX/ UI Design, Copywriting, UX Writing, etc.</p>
+    <h2 style="text-align:center">9 Deliverables</h1>
+    <br>
+    
+    <p style="font-weight:bold; text-decoration:underline">Category</p>
     <p>✅ Competitive Analysis</p>
     <p>✅ Persona Profile</p>
     <p>✅ Wireframes </p>
+    <p style="font-weight:bold; text-decoration:underline">Category</p>
     <p>✅ Moodboard (Color Psychology Analysis)</p>
     <p>✅ Interactive Prototypes </p>
     <p>✅ Flowchart & Activity Diagram</p>
     <p>✅ Site Map</p>
     <p>✅ Proofreading </p>
     <p>✅ UX Writing </p>
-    <p>✅ Software Development </p>
-    <p>✅ Usability Report </p>
-    <p>✅ Marketing Strategy</p>
+    <p class="greyed-out">❌ Software Development </p>
+    <p class="greyed-out">❌ Usability Report </p>
+    <p class="greyed-out">❌ Marketing Strategy</p>
   </div>
-  <div class="column" style="background-color:#e3d9ff;">
+  <div class="column">
     <h2>Backend Only</h2>
+    <p style="text-align:center">Backend only services including: Troubleshooting, Software Programming, App Development, Database Management, Usability Testing</p>
+    <h2 style="text-align:center">3 Deliverables</h1>
+    <br>
+    
+    <p style="font-weight:bold; text-decoration:underline">Category</p>
+    <p class="greyed-out">❌ Competitive Analysis</p>
+    <p class="greyed-out">❌ Persona Profile</p>
+    <p class="greyed-out">❌ Wireframes </p>
+    <p class="greyed-out">❌ Moodboard (Color Psychology Analysis)</p>
+    <p class="greyed-out">❌ Interactive Prototypes </p>
+    <p class="greyed-out">❌ Flowchart & Activity Diagram</p>
+    <p class="greyed-out">❌ Site Map</p>
+    <p class="greyed-out">❌ Proofreading </p>
+    <p class="greyed-out">❌ UX Writing </p>
     <p>✅ Software Development</p>
     <p>✅ Web App</p>
     <p>✅ Databases</p>
   </div>
 </div>
-
 </body>
 </html>
